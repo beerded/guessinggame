@@ -6,7 +6,7 @@ GUESSED=false
 function guess {
     read GUESSED_NFILES
     if [ $GUESSED_NFILES -eq $CORRECT_NFILES ]; then
-        echo "Congratulations. You're right. You win."
+        echo "Congratulations. You're right!"
         GUESSED=true
     elif [ $GUESSED_NFILES -lt $CORRECT_NFILES ]; then
         echo "Too low. Guess again."
@@ -20,4 +20,4 @@ while [ $GUESSED == false ]; do
     guess
 done
 
-echo "There are $CORRECT_NFILES files in this directory"
+echo "There are indeed $CORRECT_NFILES files in this directory"
