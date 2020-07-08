@@ -15,7 +15,6 @@ INTREGEXP='^-?[0-9]+$'
 
 function guess {
     read GUESSED_NFILES
-    # Surrounded the user input in quotes in case it contains spaces.
     # This first branch was not in the assignment requirements, but
     # apparently we're expected to take into account non-integer user
     # inputs
